@@ -1,7 +1,6 @@
-# euqueroaposentar — Conferência Mega da Virada 2025
+# euqueroaposentar — Confira nossa Mega da Virada 2025
 
-Para conferir nossos jogos, digite os números sorteados em 31/12/2025.
-Destaque visual automático dos acertos por jogo e cálculo de quadras/quinas/senas.
-Ordena os jogos por mais acertos, em seguida por maior tamanho do jogo.
-
-Publicar no GitHub Pages: Settings → Pages → Deploy from a branch → main → /(root).
+Digite os números sorteados em 31/12/2025 e confira:
+- destaque visual dos acertos por jogo
+- cálculo de senas, quinas e quadras
+- jogos ordenados pelas quantidades de acertos e de dezenas
