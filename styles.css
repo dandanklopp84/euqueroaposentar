@@ -1,0 +1,31 @@
+/* Tema escuro simples e legível */
+:root{ --bg:#0a0a0b; --card:#111216; --txt:#ffffff; --muted:#9aa3af; --primary:#0b6cff; --ok:#22c55e; }
+*{ box-sizing:border-box; }
+html,body{ height:100%; background:var(--bg); color:var(--txt); font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Noto Sans', 'Helvetica Neue', Arial, sans-serif; }
+header{ padding:16px; text-align:center; }
+header .subtitle{ color:var(--muted); margin-top:4px; }
+main{ padding:16px; max-width:960px; margin:0 auto; }
+section{ margin-bottom:24px; }
+.inputs{ display:flex; flex-wrap:wrap; gap:12px; align-items:center; }
+.ball{ width:64px; height:64px; border-radius:50%; border:2px solid var(--primary); background:#0f1320; color:#fff; font-size:28px; text-align:center; outline:none; }
+.ball:focus{ box-shadow:0 0 0 4px rgba(11,108,255,.2); }
+.primary, .secondary{ height:48px; padding:0 16px; border-radius:10px; border:none; font-weight:600; }
+.primary{ background:var(--primary); color:#fff; }
+.secondary{ background:#2b303b; color:#fff; }
+.helper{ color:var(--muted); margin-top:8px; }
+.cards{ display:grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap:12px; }
+.card{ background:var(--card); padding:12px; border-radius:12px; }
+.card h3{ margin:0 0 6px 0; font-size:16px; }
+.card p{ margin:0; color:var(--muted); }
+.results{ display:grid; grid-template-columns: 1fr; gap:8px; }
+.row{ background:var(--card); border-radius:12px; padding:10px; display:grid; grid-template-columns: 80px 1fr 100px 220px; gap:8px; align-items:center; }
+@media (max-width: 640px){ .row{ grid-template-columns: 70px 1fr; } .row .stats, .row .counts{ grid-column: 1 / -1; } }
+.badge{ display:inline-block; padding:2px 8px; border-radius:999px; background:#2b303b; color:#fff; font-size:12px; }
+.nums{ display:flex; flex-wrap:wrap; gap:6px; }
+.num{ width:36px; height:36px; border-radius:50%; background:#0f1320; border:1px solid #2b303b; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:600; }
+.num.hit{ border-color:var(--ok); background:#0f1a13; color:#9ef08a; }
+.counts{ display:flex; gap:8px; justify-content:flex-end; }
+.count{ display:flex; gap:6px; align-items:center; }
+.count label{ color:var(--muted); }
+.count .value{ font-weight:700; }
+footer{ text-align:center; padding:16px; color:var(--muted); }

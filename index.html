@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>euqueroaposentar — Conferidor Mega 2025</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>euqueroaposentar</h1>
+    <p class="subtitle">Conferidor da Mega da Virada 2025 — digite os 6 números sorteados e veja os acertos.</p>
+  </header>
+
+  <main>
+    <section aria-labelledby="entrada">
+      <h2 id="entrada">Números sorteados</h2>
+      <div class="inputs" role="group" aria-label="Números sorteados">
+        <input type="tel" inputmode="numeric" maxlength="2" aria-label="Número 1" class="ball" />
+        <input type="tel" inputmode="numeric" maxlength="2" aria-label="Número 2" class="ball" />
+        <input type="tel" inputmode="numeric" maxlength="2" aria-label="Número 3" class="ball" />
+        <input type="tel" inputmode="numeric" maxlength="2" aria-label="Número 4" class="ball" />
+        <input type="tel" inputmode="numeric" maxlength="2" aria-label="Número 5" class="ball" />
+        <input type="tel" inputmode="numeric" maxlength="2" aria-label="Número 6" class="ball" />
+        <button id="btnCheck" class="primary">Conferir</button>
+        <button id="btnClear" class="secondary">Limpar</button>
+      </div>
+      <p class="helper">Formato válido: números entre 01 e 60. Duplicados são ignorados.</p>
+    </section>
+
+    <section aria-labelledby="resumo">
+      <h2 id="resumo">Resumo</h2>
+      <div class="cards" id="summaryCards"></div>
+    </section>
+
+    <section aria-labelledby="resultados">
+      <h2 id="resultados">Resultados por jogo</h2>
+      <div id="results" class="results"></div>
+    </section>
+  </main>
+
+  <footer>
+    <small>Versão focada: sem PWA/exports. Destaque de acertos sempre ativo. Ordenação automática por mais acertos &rarr; maior tamanho.</small>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
